@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser'
 
 export const ContactUs = () => {
   const refForm=React.useRef()
+
+  
   const submit=(event)=>{
     event.preventDefault()
     const serviceId="service_mbxj22c"
@@ -10,8 +12,11 @@ export const ContactUs = () => {
     const apiKey="JkikxO-5rwlOIdZEX"
     emailjs.sendForm(serviceId,templateId,refForm.current,apiKey)
     .then(result=>console.log(result.text)).catch(error=>console.log(error.text))
+    console.log(refForm.current.elements[3])
+   
 
   }
+  
   return (
     <div>
       <form  ref={refForm} action="" onSubmit={submit}>
@@ -20,11 +25,11 @@ export const ContactUs = () => {
         </fieldset>
         <fieldset className='container_inputs'>
         
-        <input name='username' type="text" placeholder='Name' />
+        <input name='username' type="text" placeholder='Name' required />
         
-        <input type="email" placeholder='E-mail' />
+        <input name='username'type="email" placeholder='E-mail' required/>
         
-        <input  name='message' type="text" placeholder='Message' />
+        <input  name='message' type="text" placeholder='Message' required />
         
         <button>Submit</button>
         </fieldset>
