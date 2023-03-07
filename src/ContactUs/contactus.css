@@ -1,0 +1,62 @@
+form{
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    /* border: double #329e17 5px; */
+  }
+  
+  .header-contact {
+    width: 100%;
+    height: 6rem;
+    /* background-color: #329e17; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-contact>h2,
+  .header-contact >p{
+    color:#000000e8;
+    text-align:left;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-contact >p{
+    font-size: 1rem;
+  }
+  .field-name,
+  .field-email,
+  .field-message{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    margin: 1rem;
+    border: none;
+  }
+  
+  .symbol-required::after{
+    content:"*";
+    color: #ff0000;
+  }
+  
+  .field-message{
+    height: 12rem;
+  }
+  
+  .btn-send{
+    width: 12rem;
+    background-color: #23da07;
+  }
+  
+  .btn-send:hover,
+  .btn-send:focus{
+    background-color: #1ab1e4;
+    color: #f0ffff;
+  }
