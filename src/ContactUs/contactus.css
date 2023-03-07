@@ -1,0 +1,83 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .header-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-contact h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #1e90ff;
+  }
+  
+  .header-contact p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #1e90ff;
+  }
+  
+  .field-name,
+  .field-email,
+  .field-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #1e90ff;
+  }
+  
+  .symbol-required::after {
+    content: " *";
+    color: red;
+    
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #1e90ff;
+    
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .btn-send {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #1e90ff;
+  }
+  
+  .btn-send:hover {
+    background-color: #1e90ff;
+  }
