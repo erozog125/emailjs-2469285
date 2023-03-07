@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Formulario de contáctenos</h1>
+      <h1>EMAIL LFRG</h1>
       <ContactUs />
     </div>
   )
