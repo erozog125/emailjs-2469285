@@ -1,0 +1,54 @@
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 12px;
+}
+
+form {
+  margin: 0 auto;
+  width: 95%;
+  border-radius: 12px;
+  background-color: aqua;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+fieldset {
+  margin: 10px 16px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: black;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+textarea {
+  width: 50%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.btn-send {
+  background-color: rgb(0, 110, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
