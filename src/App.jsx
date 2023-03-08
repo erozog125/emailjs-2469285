@@ -5,8 +5,8 @@ import { ContactUs } from './ContactUs/ContactUs'
 function App() {
 
   return (
-    <div className="App">
-      <h1>Formulario de contáctenos</h1>
+    <div className="App"> 
+    <h2>CONTACT</h2>
       <ContactUs />
     </div>
   )
