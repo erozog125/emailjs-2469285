@@ -53,7 +53,7 @@ export const ContactUs = () => {
           <textarea name="message" id="" cols="30" rows="10" placeholder="type your message"></textarea>
       </fieldset>
       
-      <button>Submit</button>
+      <button>Submit :) </button>
     </form>
   </div>
   )

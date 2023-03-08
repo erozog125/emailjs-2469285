@@ -1,7 +1,7 @@
 .columna {
   display: flex;
   flex-direction: column;
-  background-color: #948181ae;
+  background-color: #ffffffae;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 10px 20px #00000033;
@@ -11,6 +11,7 @@
 fieldset {
   display: flex;
   flex-direction: column;
+  color: #000;
   margin-bottom: 20px;
   opacity: 0;
   transform: translateY(10px);
@@ -27,8 +28,9 @@ input,
 textarea {
   padding: 10px;
   border-radius: 5px;
+  background: #007bff3c;
   border: none;
-  box-shadow: 0 2px 5px #00000033;
+  box-shadow: 0 5px 15px #00000033;
   font-size: 16px;
   opacity: 0;
   transform: translateY(10px);
@@ -39,26 +41,33 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px #00000033;
 }
 
+/* inspired form gumroad website */
 button {
-  background-color: #007bff;
+  --bg: #000;
+  --hover-bg: #007bffeb;
+  --hover-text: #000;
   color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fade-in 0.5s ease forwards;
-  animation-delay: 0.6s;
+  background: var(--bg);
+  transition: 0.2s;
 }
 
 button:hover {
-  background-color: #0069d9;
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
 
 @keyframes slide-up {
