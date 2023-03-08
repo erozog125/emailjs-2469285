@@ -5,23 +5,22 @@ import emailjs from '@emailjs/browser';
 export const ContactUs = () => {
   
 const reForm = useRef();
-const handleSubmit =(Event) =>{
-  Event.preventDefault();
-  const serviceId = "service_8hd6br7";
+const handleSubmit =(event) =>{
+  event.preventDefault();
+  const serviceId = "service_cia84cl";
   const templateId = "template_xxniet5"
-  // 3 parrametro
   const apikey = "ozYip14w9-_M0eoMv"
 
-  emailjs.sendForm(serviceId,templateId,"reForm.current",apikey)
+  emailjs.sendForm(serviceId,templateId,reForm.current,apikey)
   .then(result => console.log(result.text))
-  .catch( error => console.error(error))
+  .catch( error => console.error(error))  
 }
 
 return (
     <div>
-      <form reForm={reForm} action="" onSubmit={handleSubmit}>
-        <input type="text" placeholder='Name' name='name' />
-        <input type="email" placeholder='email' name='email'/>
+      <form ref={reForm} action="" onSubmit={handleSubmit}>
+        <input type="text" placeholder='Name' name='username' required/>
+        <input type="email" placeholder='email' name='Gmail' required/>
         <textarea placeholder='escriba aqui el motivo por el cual nos contacta' name='message'/>
         <button>Submit</button>
       </form>
