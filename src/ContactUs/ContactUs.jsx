@@ -1,10 +1,16 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import './contactus.css'
 import emailjs from '@emailjs/browser'
 
 export const ContactUs = () => {
 
   const refForm = useRef();
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
 
   const handlesubmit = (event) =>{
     event.preventDefault();
@@ -17,20 +23,29 @@ export const ContactUs = () => {
      emailjs.sendForm(servicesId, templateId, refForm.current, apikey).then( result => console.log(result.text))
      .catch( error => console.log(error))
 
+       const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+    if (emailRegex.test(email)) {
+      alert('Email válido:', email);
+      setEmailError('');
+    } else {
+      setEmailError('Por favor, ingrese una dirección de correo electrónico válida.');
+    }
       
   }
+
   return (
     <div className="contenedor">
     <form action="" ref={refForm} className="columna" onSubmit={handlesubmit}>
 
       <fieldset className="field-name">
         <label className='symbol-requires name' htmlFor="">Name</label>
-        <input name="name" type="text" placeholder='Name' required/>
+        <input name="name" type="text"  placeholder='Name' required/>
       </fieldset>
       
       <fieldset>
         <label className="symbol-requires" htmlFor="">Email</label>
-        <input name="email" type="email" placeholder='email'required/>
+        <input name="email" type="email"onChange={handleEmailChange} placeholder='email'required/>
       </fieldset>
       
       <fieldset>
