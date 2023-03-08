@@ -1,0 +1,67 @@
+form{
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: double rgb(8, 95, 76) 5px;
+}
+
+fieldset{
+    /* padding-bottom: 3rem; */
+    width: 27rem;
+    margin-top: 20px;
+}
+.header-contact{
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(89, 186, 146);
+}
+
+.header-contact > h2,
+.header-contact > p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1,5rem;
+    margin: 0;
+}
+.header-contact >p{
+    font-size: 1rem;
+}
+    
+.field-name, 
+.field-email,
+.fieldset-message{
+    width: 90%;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #050505;
+    margin: 1rem;
+}
+
+.field.message{
+    height: 12rem;
+}
+
+textarea, input{
+    width: 25rem;
+    background-color: #8ee7cf;
+    color: rgb(0, 0, 0);
+}
+.btn-send {
+    width: 12rem;
+    margin-top: 20px;
+    background-color: rgb(20, 193, 182);
+}
+.symbol-required::after{
+    content: '*';
+    color: #ff0000;
+}
+
+.field-email{
+    padding-bottom: 3%;
+}
