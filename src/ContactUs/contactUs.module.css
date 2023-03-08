@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.form {
+  background-color: #fff;
+  width: 600px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 9px;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: inset 7px 7px 15px #cecece, inset -7px -7px 15px #ffffff;
+}
+
+.headerContact {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+  font-size: 1.4rem;
+}
+
+.fieldsetName {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.4rem;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.labelName {
+  padding-right: 10px;
+  letter-spacing: 2px;
+}
+
+.inputName {
+  width: 260px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 6px 6px 11px #444444, -6px -6px 11px #ffffff;
+}
+
+.fieldsetEmail {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.4rem;
+  border: none;
+  margin: 5px 0;
+}
+
+.labelEmail {
+  padding-right: 10px;
+  letter-spacing: 2px;
+}
+
+.inputEmail {
+  width: 260px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 6px 6px 11px #444444, -6px -6px 11px #ffffff;
+}
+
+.fieldsetMessage {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.4rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.labelMessage {
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.textareaMessage {
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 11px #444444, -6px -6px 11px #ffffff;
+}
+
+.btnSend {
+  width: 90%;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #44a0f7;
+  border-radius: 10px;
+}
+
+.btnSend:hover {
+  background-color: #5fb1fd;
+}

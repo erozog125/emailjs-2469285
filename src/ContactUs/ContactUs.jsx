@@ -19,8 +19,8 @@ export const ContactUs = () => {
   }
 
   return (
-    <div>
-      <form ref={refForm} action="" onSubmit={handleSubmit}>
+    <div className={Style.container}>
+      <form className={Style.form} ref={refForm} action="" onSubmit={handleSubmit}>
         <div className={Style.headerContact}>
           <h2>Contact Us</h2>
           <p>Please fill this form</p>
@@ -31,13 +31,13 @@ export const ContactUs = () => {
         </fieldset>
         <fieldset className={Style.fieldsetEmail}>
           <label className={Style.labelEmail} name='email' htmlFor="email">Email</label>
-          <input className={Style.inputEmail} name='email' type="email" placeholder='email' required />
+          <input className={Style.inputEmail} name='email' type="email" placeholder='Ej: cristofert@gmail.com' required />
         </fieldset>
         <fieldset className={Style.fieldsetMessage}>
           <label className={Style.labelMessage} htmlFor="message">Message</label>
-          <textarea className={Style.textareaMessage} name="message" id="" cols="30" rows="10"></textarea>
+          <textarea className={Style.textareaMessage} name="message" id="" cols="30" rows="10" placeholder='Write you message'></textarea>
         </fieldset>
-        <button className={Style.btnSend} >Submit</button>
+        <button className={Style.btnSend}>Submit</button>
       </form>
     </div>
   )
